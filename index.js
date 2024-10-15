@@ -5,7 +5,7 @@ const client = require('prom-client');
 // Create a Registry to register the metrics
 const register = new client.Registry();
 client.collectDefaultMetrics({ register });
-const PORT = 8080;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 
 const app = express();
